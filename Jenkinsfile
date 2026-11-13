@@ -7,7 +7,7 @@ pipeline {
         stage('Clone') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/USERNAME/Notes-Application.git'
+                    url: 'https://github.com/Yuvankrishnastackly/Notes-Application.git'
             }
         }
 
