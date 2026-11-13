@@ -13,19 +13,19 @@ pipeline {
 
         stage('Build') {
             steps {
-                sh 'docker compose build'
+                sh 'sudo docker compose build'
             }
         }
 
         stage('Deploy') {
             steps {
-                sh 'docker compose up -d'
+                sh 'sudo docker compose up -d'
             }
         }
 
         stage('Verify') {
             steps {
-                sh 'docker compose ps'
+                sh 'sudo docker compose ps'
             }
         }
     }
